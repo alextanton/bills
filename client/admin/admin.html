@@ -1,0 +1,22 @@
+<template name="admin">
+  {{#if  currentUser}}
+    {{> insertBills}}
+  {{else}}
+    {{> insertBills}}
+    <!--{{logOut}}!-->
+  {{/if}}
+</template>
+
+<template name="insertBills">
+  {{insertBill}}
+  <div id="form">
+    <h2>Insert New Bill</h2>
+    {{#autoForm collection = "Collections.Bills" id="insertScriptForm" type="insert"}}
+    {{> afQuickField name="billName"}}
+    {{> afQuickField name="amount"}}
+    {{> afQuickField name="when"}}
+    {{> afQuickField name="who" options = "allowed"}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {{/autoForm}}
+  </div>
+</template>

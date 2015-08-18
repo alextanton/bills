@@ -1,0 +1,41 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+insecure
+twbs:bootstrap
+jquery
+meteor
+accounts-base
+accounts-password
+ian:accounts-ui-bootstrap-3
+nemo64:bootstrap
+underscore
+stylus
+spacebars
+session
+anti:i18n
+accounts-oauth
+natestrauser:font-awesome
+iron:router
+aldeed:autoform
+aldeed:collection2
+momentjs:moment
+aldeed:simple-schema
+reactive-var
+reactive-dict
+random
+blaze
+check
+ejson
+deps
+ui
+mrt:moment-timezone
+templating
+reload
+aldeed:moment-timezone
+livedata
