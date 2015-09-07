@@ -1,0 +1,76 @@
+<template name="signup">
+{{> nav}}
+<div class="row">
+<div class="col-md-4" id="test">
+  {{> animate}}
+  {{> animate2}}
+</div>
+<div class="col-md-4" id="signupForm">
+  <div id="sign">
+  <form name="registration">
+    <div id="name" class="form-group">
+      <form class="form-inline">
+        <label id="fnameLabel" for="fname">Name</label>
+        <input class="form-control" id="fname" placeholder="First">
+        <br>
+        <input class="form-control" id="lname" placeholder="Last">
+      </form>
+    </div>
+  <div class="form-group">
+    <div class="form-group">
+      <label>Username</label>
+      <input class="form-control" id="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <label for="username">Email</label>
+      <input class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group" id="pass">
+      <label class="control-label" for="username">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <div class="form-group" id="con">
+      <label class="control-label" for="username">Confirm Password</label>
+      <input type="password" class="form-control" id="confirm" placeholder="Username">
+    </div>
+  </div>
+      <div id="dateGender" class="form-group">
+      <form>
+        <div class="form-group" id="birthday">
+          <label id="dateLabel" for="date">Birthday</label>
+          <input class="form-control" id="date" placeholder="Birthday">
+        </div>
+        <div class="form-group" id="gender">
+          <label id="genderLabel" for="genderPick">Gender</label>
+          <select class="form-control" id="genderPick" placeholder="Gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div id="cap">
+    {{> reCAPTCHA}}
+    </div>
+    <div id="sub">
+    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="reset" class="btn btn-default">Reset</button>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+</template>
+
+<template name="animate">
+  <img id="cFace1" src="cFace1.jpg" class="img-circle" height="180" width="150">
+  <img id="cFace2" src="cFace2.jpg" class="img-circle" height="180" width="150">
+  <img id="cFace3" src="cFace3.jpg" class="img-circle" height="180" width="150">
+</template>
+
+<template name="animate2">
+  <img id="nFace1" src="nFace1.jpg" class="img-circle" height="180" width="150">
+  <img id="nFace2" src="nFace2.jpg" class="img-circle" height="180" width="150">
+  <img id="nFace3" src="nFace3.jpg" class="img-circle" height="180" width="150">
+</template>

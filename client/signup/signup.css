@@ -1,0 +1,80 @@
+#sign{
+	width: 404px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 5px; 
+	overflow: auto;
+	height: 600px;
+}
+
+#signupForm{
+	background-color: white;
+	width: 434px;
+	height: 620px;
+	overflow: auto;
+	border: solid 1px black;
+
+}
+
+#name{
+	display: block-inline;
+}
+
+#fname{
+	width: 190px;
+	float: left;
+}
+
+#lname{
+	width: 190px;
+	float: left;
+	margin-left: 20px;
+}
+
+#fnameLabel{
+	margin-right: 200px;
+}
+
+#dateGender form{
+	display: inline;
+	clear: both;
+}
+
+#birthday{
+	width: 100px;
+	float: left;
+}
+
+#gender{
+	width: 280px;
+	float: left;
+	margin-left: 20px;
+}
+
+#cap{
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 300px;
+}
+
+#sub{
+	margin-top: 30px;
+}
+
+#test{
+
+}
+
+#cFace1{}
+
+#cFace2{}
+
+#cFace3{}
+
+#nFace1{}
+
+#nFace2{}
+
+#nFace3{}

@@ -1,15 +1,20 @@
 <template name="admin">
-  {{#if  currentUser}}
-    {{> insertBills}}
-  {{else}}
-    {{> insertBills}}
-    <!--{{logOut}}!-->
-  {{/if}}
+  {{> navAdmin}}
+  <!--{{#if  currentUser}}!-->
+    <div id="adminStuff" class="row">
+      {{> insertBills}}
+      {{> removeBill}}
+      {{> userList}}
+    </div>
+  <!--{{else}}!-->
+    
+    <!--{{logOut}}
+    {{/if}}!-->
 </template>
 
 <template name="insertBills">
   {{insertBill}}
-  <div id="form">
+  <div class="col-md-6" id="form">
     <h2>Insert New Bill</h2>
     {{#autoForm collection = "Collections.Bills" id="insertScriptForm" type="insert"}}
     {{> afQuickField name="billName"}}
@@ -20,3 +25,61 @@
     {{/autoForm}}
   </div>
 </template>
+
+<template name='navAdmin'>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href={{pathFor 'bills'}}> <i class="fa fa-money"></i> Tha Billz</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active">
+              <a href={{pathFor 'bills'}}>Home</a>
+            </li>
+            <li>
+              <a href="#">{{> loginButtons}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</template>
+
+<template name="removeBill">
+  <div class="col-md-6" id="dialog-window">
+
+    <div id="scrollable-content">
+      <h2>Nick's Bills:</h2>
+      {{#each nicksBills}}
+        <div id="Bills">
+          <p>{{dates}} |</p>
+          <p> ${{money}} |</p>
+          <p> {{this.billName}}</p>
+          <p><i id="close" class="fa fa-times"></i></p>
+        </div>
+      {{/each}}
+      <h2>Christians's Bills:</h2>
+      {{#each chrisBills}}
+        <div id="Bills">
+          <p>{{dates}} |</p>
+          <p> ${{money}} |</p>
+          <p> {{this.billName}}</p>
+          <p><i id="close" class="fa fa-times"></i></p>
+        </div>
+      {{/each}}
+    </div>
+
+    <div id="footer">
+    </div>
+
+  </div>
+</template>
+
+<template name="userList">
+  <div id="dialog-window2">
+    <div id="scrollable-content2">
+      
+    </div>
+  </div>
+</template>
+
+

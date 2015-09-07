@@ -24,6 +24,30 @@ table td{
 	margin-left: 30px;
 }
 
+#row{
+	background-color: red;
+}
+
+#chat{
+	border: solid black 2px;
+	position: fixed;
+	bottom: 0px;
+	right: 30px;
+	width: 170px;
+	height: 30px;
+	text-align: center;
+}
+
+#plane{
+	margin-top: -3px;
+}
+
+#message #typing{
+	position: absolute;
+	bottom: -14px;
+	width: 100%;
+}
+
 @media only screen and (max-width: 866px) {
     #container {
     	width: 500px;
