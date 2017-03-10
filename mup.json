@@ -7,7 +7,7 @@
       "password": "
       // or pem file (ssh based authentication)
       //"pem": "~/.ssh/id_rsa",
-      //"passphrase": "vineyard600"
+      //"passphrase": ""
     }
   ],
 
